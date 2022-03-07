@@ -1,6 +1,6 @@
 # nimi
 
-Really 15 min code-project to create Manim projects with a basic file structure. 
+Super-simple 15 min project to create Manim project directories with a basic structure. 
 
 	project_name
 	├── cfg
@@ -12,6 +12,11 @@ Really 15 min code-project to create Manim projects with a basic file structure.
 	└── README.md
 
 A folder with the `project_name`. A _just_ file that renders the animation and a `cfg` subfolder with various dimensions.
+
+## Installation
+
+	cargo install --git https://github.com/AOx0/nimi
+
 
 ## Usage
 Create a new project in the current directory with the default name `manim_template`
@@ -27,3 +32,4 @@ Create a new project in the parent directory called `lol`
 	nimi ../ -n lol
 
 Etc.
+
