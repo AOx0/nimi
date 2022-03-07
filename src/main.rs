@@ -34,7 +34,7 @@ macro_rules! change_name {
             .replace("ManimTemplate", &name_camel)
             .replace("manim_template", &$name);
 
-        dbg!(&new_contents);
+        //dbg!(&new_contents);
 
         let mut file = OpenOptions::new()
             .write(true)
@@ -62,4 +62,5 @@ fn main() {
     change_name!(path.join("cfg").join("manim.cfg"), name);
     change_name!(path.join("cfg").join("manim_low.cfg"), name);
     change_name!(path.join("cfg").join("manim_very_low.cfg"), name);
+    change_name!(path.join("README.md"), name);
 }
